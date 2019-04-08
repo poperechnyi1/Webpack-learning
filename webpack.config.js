@@ -52,6 +52,14 @@ module.exports = {
 
 if(NODE_ENV == 'production'){
     module.exports.optimization={
-        minimizer:[new UglifyJsPlugin()]
+        minimizer:[new UglifyJsPlugin({
+            uglifyOptions: {
+                compress: {},
+                warnings: false,
+                drop_console: true,
+                unsafe: true
+            }
+
+        })]
     }
 }
