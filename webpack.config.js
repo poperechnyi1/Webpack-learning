@@ -4,13 +4,15 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
+
 module.exports = {
     // mode: 'development',
     context: __dirname + '/src',
     entry: {
         home: "./js/home",
         about: "./js/about",
-        welcome: "./js/welcome"
+        welcome: "./js/welcome",
+        common: ["./js/common", "./js/welcome"]
     },
     output: {
         filename: '[name].js',
@@ -58,8 +60,26 @@ module.exports = {
     },
 
     optimization: {
-        splitChunks:{
-            name: 'common'
+        splitChunks: {
+            chunks: 'async',
+            minSize: 30000,
+            maxSize: 0,
+            minChunks: 1,
+            maxAsyncRequests: 5,
+            maxInitialRequests: 3,
+            automaticNameDelimiter: '~',
+            name: true,
+            cacheGroups: {
+                vendors: {
+                    test: /[\\/]node_modules[\\/]/,
+                    priority: -10
+                },
+                default: {
+                    minChunks: 2,
+                    priority: -20,
+                    reuseExistingChunk: true
+                }
+            }
         }
     }
 

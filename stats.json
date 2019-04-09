@@ -1,0 +1,870 @@
+
+webpack is watching the files…
+
+{
+  "errors": [],
+  "warnings": [
+    "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/"
+  ],
+  "version": "4.29.0",
+  "hash": "67ec7034baf1e773826d",
+  "time": 1905,
+  "builtAt": 1554816105017,
+  "publicPath": "",
+  "outputPath": "D:\\WEB\\WEB-pack screencast\\dist",
+  "assetsByChunkName": {
+    "about": [
+      "about.js",
+      "about.js.map"
+    ],
+    "home": [
+      "home.js",
+      "home.js.map"
+    ],
+    "welcome": [
+      "welcome.js",
+      "welcome.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "about.js",
+      "size": 1169,
+      "chunks": [
+        0,
+        2
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "about.js.map",
+      "size": 5186,
+      "chunks": [
+        0,
+        2
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js",
+      "size": 1165,
+      "chunks": [
+        1,
+        2
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js.map",
+      "size": 5183,
+      "chunks": [
+        1,
+        2
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "welcome.js",
+      "size": 1071,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "welcome"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "welcome.js.map",
+      "size": 4910,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "welcome"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "home": {
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "home.js",
+        "home.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "about": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "about.js",
+        "about.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "welcome": {
+      "chunks": [
+        2
+      ],
+      "assets": [
+        "welcome.js",
+        "welcome.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "home": {
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "home.js",
+        "home.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "about": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "about.js",
+        "about.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "welcome": {
+      "chunks": [
+        2
+      ],
+      "assets": [
+        "welcome.js",
+        "welcome.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 249,
+      "names": [
+        "about"
+      ],
+      "files": [
+        "about.js",
+        "about.js.map"
+      ],
+      "hash": "8677d57f3a11878e805f",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\welcome.js",
+          "name": "./js/welcome.js",
+          "index": 1,
+          "index2": 0,
+          "size": 157,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0,
+            1,
+            2
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 216,
+            "building": 790
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./welcome",
+              "loc": "3:0-32"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "4:0-7"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "5:18-25"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./welcome",
+              "loc": "3:0-32"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "4:0-7"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "5:18-25"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./js/welcome",
+              "loc": "welcome"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "'use strict';\n\nexport default function (message) {\n  if (NODE_ENV == 'development') {\n    console.log(message);\n  }\n\n  alert(\"Welcome \".concat(message));\n}\n;"
+        },
+        {
+          "id": 2,
+          "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+          "name": "./js/about.js",
+          "index": 2,
+          "index2": 2,
+          "size": 92,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 217,
+            "building": 737,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./js/about",
+              "loc": "about"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "'use strict';\n\nimport welcome from './welcome';\nwelcome(\"about\");\nexports.welcome = welcome;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "about",
+          "request": "./js/about",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 248,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js",
+        "home.js.map"
+      ],
+      "hash": "b65bc3c03fda6aa2810c",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\welcome.js",
+          "name": "./js/welcome.js",
+          "index": 1,
+          "index2": 0,
+          "size": 157,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0,
+            1,
+            2
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 216,
+            "building": 790
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./welcome",
+              "loc": "3:0-32"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "4:0-7"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "5:18-25"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./welcome",
+              "loc": "3:0-32"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "4:0-7"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "5:18-25"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./js/welcome",
+              "loc": "welcome"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "'use strict';\n\nexport default function (message) {\n  if (NODE_ENV == 'development') {\n    console.log(message);\n  }\n\n  alert(\"Welcome \".concat(message));\n}\n;"
+        },
+        {
+          "id": 1,
+          "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+          "name": "./js/home.js",
+          "index": 0,
+          "index2": 1,
+          "size": 91,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 57,
+            "building": 899,
+            "dependencies": 3
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./js/home",
+              "loc": "home"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "'use strict';\n\nimport welcome from './welcome';\nwelcome(\"home\");\nexports.welcome = welcome;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "home",
+          "request": "./js/home",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 157,
+      "names": [
+        "welcome"
+      ],
+      "files": [
+        "welcome.js",
+        "welcome.js.map"
+      ],
+      "hash": "f8bf175433c32f0f254f",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\welcome.js",
+          "name": "./js/welcome.js",
+          "index": 1,
+          "index2": 0,
+          "size": 157,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0,
+            1,
+            2
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 216,
+            "building": 790
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./welcome",
+              "loc": "3:0-32"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "4:0-7"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+              "module": "./js/home.js",
+              "moduleName": "./js/home.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "5:18-25"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./welcome",
+              "loc": "3:0-32"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "4:0-7"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+              "module": "./js/about.js",
+              "moduleName": "./js/about.js",
+              "type": "harmony import specifier",
+              "userRequest": "./welcome",
+              "loc": "5:18-25"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./js/welcome",
+              "loc": "welcome"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "'use strict';\n\nexport default function (message) {\n  if (NODE_ENV == 'development') {\n    console.log(message);\n  }\n\n  alert(\"Welcome \".concat(message));\n}\n;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "welcome",
+          "request": "./js/welcome",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\welcome.js",
+      "name": "./js/welcome.js",
+      "index": 1,
+      "index2": 0,
+      "size": 157,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0,
+        1,
+        2
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 216,
+        "building": 790
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+          "module": "./js/home.js",
+          "moduleName": "./js/home.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./welcome",
+          "loc": "3:0-32"
+        },
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+          "module": "./js/home.js",
+          "moduleName": "./js/home.js",
+          "type": "harmony import specifier",
+          "userRequest": "./welcome",
+          "loc": "4:0-7"
+        },
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+          "module": "./js/home.js",
+          "moduleName": "./js/home.js",
+          "type": "harmony import specifier",
+          "userRequest": "./welcome",
+          "loc": "5:18-25"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+          "module": "./js/about.js",
+          "moduleName": "./js/about.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./welcome",
+          "loc": "3:0-32"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+          "module": "./js/about.js",
+          "moduleName": "./js/about.js",
+          "type": "harmony import specifier",
+          "userRequest": "./welcome",
+          "loc": "4:0-7"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+          "module": "./js/about.js",
+          "moduleName": "./js/about.js",
+          "type": "harmony import specifier",
+          "userRequest": "./welcome",
+          "loc": "5:18-25"
+        },
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./js/welcome",
+          "loc": "welcome"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is an entry point"
+      ],
+      "depth": 0,
+      "source": "'use strict';\n\nexport default function (message) {\n  if (NODE_ENV == 'development') {\n    console.log(message);\n  }\n\n  alert(\"Welcome \".concat(message));\n}\n;"
+    },
+    {
+      "id": 1,
+      "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\home.js",
+      "name": "./js/home.js",
+      "index": 0,
+      "index2": 1,
+      "size": 91,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 57,
+        "building": 899,
+        "dependencies": 3
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./js/home",
+          "loc": "home"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is an entry point"
+      ],
+      "depth": 0,
+      "source": "'use strict';\n\nimport welcome from './welcome';\nwelcome(\"home\");\nexports.welcome = welcome;"
+    },
+    {
+      "id": 2,
+      "identifier": "D:\\WEB\\WEB-pack screencast\\node_modules\\babel-loader\\lib\\index.js??ref--4!D:\\WEB\\WEB-pack screencast\\src\\js\\about.js",
+      "name": "./js/about.js",
+      "index": 2,
+      "index2": 2,
+      "size": 92,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 217,
+        "building": 737,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./js/about",
+          "loc": "about"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is an entry point"
+      ],
+      "depth": 0,
+      "source": "'use strict';\n\nimport welcome from './welcome';\nwelcome(\"about\");\nexports.welcome = welcome;"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
