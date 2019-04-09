@@ -6,10 +6,15 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     // mode: 'development',
-    entry: './home',
+    context: __dirname + '/src',
+    entry: {
+        home: "./js/home",
+        about: "./js/about",
+        welcome: "./js/welcome"
+    },
     output: {
-        filename: 'build.js',
-        library: "home"
+        filename: '[name].js',
+        library: "[name]"
     },
 
     watch: NODE_ENV == 'development',
