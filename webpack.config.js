@@ -27,7 +27,8 @@ module.exports = {
 
     plugins: [
         new webpack.DefinePlugin({NODE_ENV:JSON.stringify(NODE_ENV),
-        LANG: JSON.stringify('ru')})
+        LANG: JSON.stringify('ru')}),
+        new webpack.NoEmitOnErrorsPlugin()
     ],
 
     resolve: {
