@@ -28,7 +28,10 @@ module.exports = {
     plugins: [
         new webpack.DefinePlugin({NODE_ENV:JSON.stringify(NODE_ENV),
         LANG: JSON.stringify('ru')}),
-        new webpack.NoEmitOnErrorsPlugin()
+        new webpack.NoEmitOnErrorsPlugin(),
+        // new webpack.optimize.splitChunks({
+        //     name: "common"
+        // })
     ],
 
     resolve: {
@@ -53,6 +56,12 @@ module.exports = {
             }
         }],
     },
+
+    optimization: {
+        splitChunks:{
+            name: 'common'
+        }
+    }
 
 };
 
