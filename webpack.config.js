@@ -9,10 +9,8 @@ module.exports = {
     // mode: 'development',
     context: __dirname + '/src',
     entry: {
-        home: "./js/home",
-        about: "./js/about",
-        welcome: "./js/welcome",
-        common: ["./js/common", "./js/welcome"]
+        app: "./js/app",
+        login: "./js/login",
     },
     output: {
         filename: '[name].js',
