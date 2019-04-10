@@ -1,0 +1,2 @@
+(window.webpackJsonp_name_=window.webpackJsonp_name_||[]).push([[1],[function(n,o,t){"use strict";n.exports=function(){alert("login")}},function(n,o,t){"use strict";n.exports=function(){alert("logout")}}]]);
+//# sourceMappingURL=auth.js.map

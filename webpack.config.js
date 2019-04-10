@@ -10,10 +10,10 @@ module.exports = {
     context: __dirname + '/src',
     entry: {
         app: "./js/app",
-        login: "./js/login",
     },
     output: {
         filename: '[name].js',
+        publicPath: "/dist/",
         library: "[name]"
     },
 
@@ -26,12 +26,7 @@ module.exports = {
     devtool: NODE_ENV == 'development' ? 'source-map' : 'null',
 
     plugins: [
-        new webpack.DefinePlugin({NODE_ENV:JSON.stringify(NODE_ENV),
-        LANG: JSON.stringify('ru')}),
         new webpack.NoEmitOnErrorsPlugin(),
-        // new webpack.optimize.splitChunks({
-        //     name: "common"
-        // })
     ],
 
     resolve: {
@@ -57,29 +52,6 @@ module.exports = {
         }],
     },
 
-    optimization: {
-        splitChunks: {
-            chunks: 'async',
-            minSize: 30000,
-            maxSize: 0,
-            minChunks: 1,
-            maxAsyncRequests: 5,
-            maxInitialRequests: 3,
-            automaticNameDelimiter: '~',
-            name: true,
-            cacheGroups: {
-                vendors: {
-                    test: /[\\/]node_modules[\\/]/,
-                    priority: -10
-                },
-                default: {
-                    minChunks: 2,
-                    priority: -20,
-                    reuseExistingChunk: true
-                }
-            }
-        }
-    }
 
 };
 
