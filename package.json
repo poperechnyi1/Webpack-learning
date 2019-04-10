@@ -1,0 +1,28 @@
+{
+  "name": "web-pack-screencast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "build": "webpack -d",
+    "prod": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poperechnyi1/Webpack-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poperechnyi1/Webpack-learning/issues"
+  },
+  "homepage": "https://github.com/poperechnyi1/Webpack-learning#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
