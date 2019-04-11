@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"Hellow Webpack\");\r\nalert(\"Hellow Webpack\");\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("// import \"./index.html\";\r\n\r\nconsole.log(\"Hellow Webpack\");\r\nalert(\"Hellow Webpack\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
