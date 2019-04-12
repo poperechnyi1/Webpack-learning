@@ -67,6 +67,57 @@ module.exports = {
                 ],
 
             },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: './',
+                            useRelativePath: true
+                        },
+
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 75
+                            },
+                            // optipng.enabled: false will disable optipng
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: '65-90',
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
+                            }
+                        },
+                    }
+                ],
+            },
+            // {
+            //     test: /\.(gif|png|jpe?g|svg)$/i,
+            //     use: [
+            //         'file-loader',
+            //         {
+            //             loader: 'image-webpack-loader',
+            //             options: {
+            //                 bypassOnDebug: true, // webpack@1.x
+            //                 disable: true, // webpack@2.x and newer
+            //             },
+            //         },
+            //     ],
+            // }
         ]
     }
 }
